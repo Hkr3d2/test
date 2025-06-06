@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Changing Background</title>
+    <style>
+        body {
+            transition: background-color 1s ease;
+        }
+    </style>
+</head>
+<body>
+    <h1>Background color changes every 2 seconds</h1>
+    
+    <script>
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#F033FF', '#FF33F0'];
+        let currentIndex = 0;
+        
+        function cycleColors() {
+            document.body.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length;
+        }
+        
+        // Change color every 2 seconds
+        setInterval(cycleColors, 2000);
+    </script>
+</body>
+</html>
