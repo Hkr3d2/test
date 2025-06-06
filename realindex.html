@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deep Blue Transition</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: #f0f0f0;
+            background: linear-gradient(45deg, #1a4b8c, #0d3a73, #022a5e, #011f4b, #001538);
+            background-size: 400% 400%;
+            animation: gradientFlow 12s ease infinite;
+        }
+        
+        @keyframes gradientFlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        h1 {
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Deep Blue Gradient Transition</h1>
+    </div>
+</body>
+</html>
